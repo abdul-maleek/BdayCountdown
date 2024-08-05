@@ -1,0 +1,105 @@
+body, h1, form, label, input, button, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to right, skyblue, skyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: burlywood;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: skyblue;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: burlywood;
+}
+
+#countdown {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: burlywood;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    #countdown {
+        font-size: 1.2em;
+    }
+}
+
